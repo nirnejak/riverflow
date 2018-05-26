@@ -1,0 +1,69 @@
+.aboutUsButton {
+	top: 30px;
+	right: 30px;
+	position: fixed; 
+	z-index: 0;
+
+	min-width: 100%;
+	max-width: 100%;
+
+	display: flex;
+	justify-content: flex-end;
+	align-self: flex-end;
+}
+
+@media only screen and (max-width: 700px) {
+	.aboutUsButton {
+		top: 120px;
+		justify-content: center;
+		right: 0;
+	}
+	.cardHolder .aboutUs {
+		flex-wrap: wrap;
+	}
+	.cardHolder .aboutUs .people {
+		min-width: 100%;
+		max-width: 100%;
+	}
+}
+
+.aboutUsButton input[type="button"]{
+	padding:10px 25px;
+	font-family: 'Lato', sans-serif;
+	background: white;
+	border-radius: 5px;
+	border-width: 0px;
+
+	outline: none;
+	appearance: none;
+	box-shadow: none;
+}
+
+.cardHolder .aboutUs {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	text-align: center;
+	align-self: center;
+	align-items: flex-start;
+
+	padding: 20px;
+
+	min-width: 95%;
+	max-width: 95%;
+	min-height: 95%;
+	max-height: 95%;
+
+  	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+
+  	overflow: hidden;
+}
+
+.cardHolder .aboutUs .people h1{
+	display: flex;
+	background: rgba(217,217,217,0.7);
+	font-size: 25px;
+	padding: 7px;
+	margin-top: 17px;
+	margin-bottom: 15px;
+}

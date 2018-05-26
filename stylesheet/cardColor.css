@@ -1,0 +1,21 @@
+.blank {
+	background: none;
+}
+.whiteBG {
+	background: rgba(255,255,255,1.0);
+}
+.maroonBG {
+	background: rgba(169,3,41,1.0);
+}
+.purpleBG {
+	background: rgba(156,39,176,1.0);
+}
+.greenBG {
+	background: rgba(153,204,34,1.0);
+}
+.orangeBG {
+	background: rgba(255,87,34,1.0);
+}
+.blueBG {
+	background: rgba(0,120,215,1.0);
+}

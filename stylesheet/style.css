@@ -1,0 +1,102 @@
+@import url(cardColor.css);
+@import url(aboutStyle.css);
+@import url(descStyle.css);
+
+* {
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background: rgb(3,18,42);
+	font-family: 'Lato', sans-serif;
+	/* font-family: 'Slabo 27px', serif; */
+}
+
+.background {
+	background: url(../img/background.png);
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	display: flex;
+	flex-direction: column;
+
+	min-width: 100%;
+	max-width: 100%;
+	min-height: 100vh;
+
+	position: fixed;
+	z-index: 0;
+	top: 0;
+	left: 0;
+
+	-webkit-filter: blur(3px);
+	-moz-filter: blur(3px);
+	-o-filter: blur(3px);
+	-ms-filter: blur(3px);
+	filter: blur(3px);
+}
+
+.cardHolder {
+	position: relative;
+	z-index: 1;
+	
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-end;
+
+	flex-wrap: wrap;
+
+	min-width: 95%;
+	max-width: 95%;
+
+	margin-top: 200px;
+	margin-bottom: 200px;
+}
+
+.cardHolder .card {
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+	align-self: center;
+	align-items: left;
+
+	min-width: 270px;
+	max-width: 270px;
+	min-height: 270px;
+	max-height: 270px;
+
+  	transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.cardHolder .card > p {
+	background: rgba(217,217,217,0.8);
+	color: black;
+	text-transform: uppercase;
+	padding: 7px;
+	margin: 15px;
+}
+
+@media only screen and (max-width: 700px) {
+	.cardHolder{
+		justify-content: center;
+		flex-direction: column;
+	}
+	.cardHolder .card {
+		margin: 7px;
+		border-radius: 5px;
+
+		box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+	}
+
+	.blank {
+		background: none;
+		display: none;
+	}
+}
+.cardHolder .card:hover {
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	transform: scale(1.02);
+}
